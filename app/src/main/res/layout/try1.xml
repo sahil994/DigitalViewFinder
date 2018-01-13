@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/ivImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:elevation="5dp"
+        android:src="@drawable/jellyfish"
+        app:layout_anchor="@id/linearlayout"
+        app:layout_anchorGravity="center|top" />
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="40dp"
+       android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Kateogrie"
+            android:textColor="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/tvCategoryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:text="dcdsfcdfcdfdffv"
+            android:textColor="@color/text_msg_input" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Firma"
+            android:textColor="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/tvDesignastion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="App Developer"
+            android:textColor="@color/text_msg_input" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Email"
+            android:textColor="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="bhawani@gmail.com"
+            android:textColor="@color/text_msg_input" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Twlefon"
+            android:textColor="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:text="9912321323"
+            android:textColor="@color/text_msg_input" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Description"
+            android:textColor="@color/colorPrimary" />
+
+
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:text="dcdsfcdfcdfdffv"
+                    android:textColor="@color/text_msg_input" />
+
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:background="@color/colorPrimary"
+            android:text="ZU ASSISTENT HINZUFUGEN"
+            android:textColor="@android:color/white"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:background="@color/grey"
+            android:text="CANCEL"
+            android:textColor="@android:color/white"
+
+            />
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

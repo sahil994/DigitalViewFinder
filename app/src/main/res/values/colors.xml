@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6854FF</color>
+    <color name="colorPrimaryDark">#6854FF</color>
+    <color name="colorAccent">#6dff4081</color>
+    <color name="lightblue">#6854FF</color>
+    <color name="lightpink">#9A00FF</color>
+    <color name="lightestpink">#c69a00ff</color>
+    <color name="lightgrey">#ba979797</color>
+    <color name="light">#a1626262</color>
+    <color name="text_msg_input">#626262</color>
+    <color name="grey">#dc797979</color>
+    <color name="black">#4d4d4d</color>
+   <color name="transparent_black">#7f282727</color>
+    <color name="lightestgrey">#ba979797</color>
+    <color name="colorBackGrey">#F4F4F4</color>
+    <color name="colormidgrey">#fdfbfb</color>
+    <color name="colormidadwqdwdgrey">#6d1e1e1e</color>
+
+</resources>

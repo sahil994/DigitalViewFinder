@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/size"
+        android:padding="10dp"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:lineSpacingExtra="2dp"
+
+        />
+
+
+
+        <EditText
+            android:id="@+id/etWidth"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:padding="8dp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rectangle"
+            android:layout_height="wrap_content"
+            android:hint="Preview width in centimeter"
+            android:imeOptions="actionNext"
+            />
+
+
+
+
+        <EditText
+            android:id="@+id/etHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="19dp"
+            android:padding="8dp"
+            android:background="@drawable/rectangle"
+            android:imeOptions="actionDone"
+            android:hint="Preview height in centimeter" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="right"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Dismiss"
+            android:id="@+id/tvDismiss"
+            android:textColor="#ba1d1d"
+            android:textSize="16sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="Proceed"
+            android:id="@+id/tvProceed"
+            android:textColor="#1ab321"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

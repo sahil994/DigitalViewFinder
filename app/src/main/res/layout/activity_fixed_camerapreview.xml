@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1a1a"
+    android:orientation="vertical"
+    tools:context="com.hocrox.digitalviewfinder.FixedSizeActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/gridlayout"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/ivback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_arrow_back_white_24dp"
+            tools:ignore="ContentDescription" />
+
+
+        <RelativeLayout
+            android:id="@+id/cameralayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ivback"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp">
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:layout_alignParentBottom="true">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinatorview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="bottom"
+                android:background="#a31a1a1a">
+
+                <ImageView
+                    android:id="@+id/ivGalleryImage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_insert_photo_grey_500_24dp"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+
+            <io.supercharge.shimmerlayout.ShimmerLayout
+                android:id="@+id/shimmer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:shimmer_animation_duration="1500"
+                app:shimmer_color="@color/lightblue">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/clickImage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_camera_alt_white_18dp"
+                    app:backgroundTint="@color/lightblue"
+                    app:layout_anchor="@id/linearlayout"
+                    app:layout_anchorGravity="center_horizontal" />
+            </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

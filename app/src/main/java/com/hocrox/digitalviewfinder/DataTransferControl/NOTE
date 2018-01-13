@@ -1,0 +1,64 @@
+    Point point1_draw = new Point(236,150);
+        Point point2_draw = new Point(63,250);
+        Point point3_draw = new Point(409,250);
+
+        Path path = new Path();
+        path.moveTo(point1_draw.x, point1_draw.y);
+        path.lineTo(point2_draw.x, point2_draw.y);
+        path.lineTo(point3_draw.x, point3_draw.y);
+        path.lineTo(point1_draw.x, point1_draw.y);
+        path.close();
+        canv.drawARGB(0, 0, 0, 0);
+       // pDraw[0].setColor(Color.parseColor("#BAB399"));
+        canv.drawPath(path, pDraw[0]);
+
+
+
+        final RectF oval = new RectF();
+        oval.set(50, 100, 250, 300);
+
+
+        final RectF oval1 = new RectF();
+        oval1.set(222, 100, 422, 300);
+
+
+        Point point4_draw = new Point(63,250);
+        Point point5_draw = new Point(409,250);
+        Point point6_draw = new Point(250,480);
+
+        Path path1 = new Path();
+        path1.moveTo(point4_draw.x, point4_draw.y);
+        path1.lineTo(point5_draw.x, point5_draw.y);
+        path1.lineTo(point6_draw.x, point6_draw.y);
+        path1.lineTo(point4_draw.x, point4_draw.y);
+        path1.close();
+        canv.drawARGB(0, 0, 0, 0);
+        pDraw[0].setColor(Color.parseColor("#BAB399"));
+        canv.drawPath(path1, pDraw[0]);
+
+
+
+
+
+
+
+
+
+
+        /*  Path path = new Path();
+         path.moveTo(200,100);
+        path.close();
+      */
+
+
+        //
+
+
+
+
+
+
+
+
+        canv.drawArc(oval, -30, -180, true, pDraw[0]);
+        canv.drawArc(oval1, 30, -180, true, pDraw[0]);

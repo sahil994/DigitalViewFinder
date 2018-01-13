@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DigitalViewFinder</string>
+    <string name="password">Password</string>
+    <string name="comnfirm_password">Confirm Password</string>
+    <string name="size">Enter the width and Height to Set the Camera Preview in <b>centimeters</b></string>
+</resources>

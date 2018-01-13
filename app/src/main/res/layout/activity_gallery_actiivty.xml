@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dc000000"
+    android:orientation="vertical"
+    tools:context="com.hocrox.digitalviewfinder.FixedSizeActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backIamgeview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/ivImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/heart_180"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:id="@+id/layoutShapes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/ivSmallHeart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/smalllike"
+                tools:ignore="ContentDescription" />
+
+
+            <ImageView
+                android:id="@+id/ivSmallCircle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/smallcircle"
+
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/ivSmallOval"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/smalloval"
+
+                tools:ignore="ContentDescription" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivMore"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/layoutShapes"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/grey"
+            android:src="@drawable/ic_more_vert_white_48dp"
+
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivLargestIamge"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/largehearticon"
+            tools:ignore="ContentDescription" />
+
+
+        <ImageView
+            android:id="@+id/ivSecondImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+
+            android:background="@drawable/secondlargeicon"
+
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/ivSmallestImage"
+
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/smallhearticon"
+
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/linearlayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/multicolorback"
+        android:text="Pick Image" />
+
+
+</RelativeLayout>

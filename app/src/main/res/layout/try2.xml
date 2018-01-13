@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/jellyfish" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Android app Developer"
+            android:textColor="#2d2d2d"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="Hawani Singh"
+            android:textColor="@color/text_msg_input" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:text="Hawani@gmail.com"
+
+                android:textColor="@color/text_msg_input" />
+
+
+            <TextView
+                android:id="@+id/tvMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_call_black_24dp"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+
+                android:text="+1 73e783478"
+                android:textColor="@color/text_msg_input" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_error_outline_black_24dp"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:text="jdfbdferhfyufudduifhrufcuirhdwcdfurh"
+            android:textSize="12sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lightgrey"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
